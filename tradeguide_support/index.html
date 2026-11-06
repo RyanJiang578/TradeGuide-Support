@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="TradeGuide support: find answers to common questions, troubleshoot issues, and contact the developer." />
+  <meta name="theme-color" content="#0b1832" />
+  <title>TradeGuide | Support</title>
+  <style>
+    :root { color-scheme: light; --navy:#0b1832; --blue:#174477; --teal:#087e83; --ink:#14243d; --muted:#51617a; --edge:#dee6f0; --bg:#f6f9fd; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background:var(--bg); color:var(--ink); line-height:1.6; }
+    a { color:#0b607a; }
+    a:focus-visible, summary:focus-visible { outline:3px solid #16a4aa; outline-offset:3px; }
+    .wrap { width:min(960px,calc(100% - 40px)); margin:auto; }
+    header { background:var(--navy); color:#fff; }
+    nav { display:flex; align-items:center; justify-content:space-between; gap:20px; padding:19px 0; }
+    .brand { display:flex; gap:10px; align-items:center; text-decoration:none; color:white; font-weight:800; letter-spacing:-.03em; font-size:1.2rem; }
+    .mark { display:grid; place-items:center; width:33px; height:33px; border-radius:10px; background:linear-gradient(140deg,#1b538e,#0ea88d); font-size:21px; }
+    nav .links { display:flex; gap:24px; font-size:.9rem; }
+    nav .links a { color:#d6e9f0; text-decoration:none; }
+    nav .links a:hover { text-decoration:underline; }
+    .hero { padding:78px 0 92px; background:radial-gradient(ellipse at 85% 15%,#207f83 0%,transparent 40%),linear-gradient(130deg,#0b1832,#13406b 70%,#0c6573); color:white; }
+    .eyebrow { font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:#8de5d5; font-size:.75rem; }
+    h1 { margin:13px 0 15px; font-size:clamp(2.6rem,6vw,4rem); line-height:1.08; letter-spacing:-.055em; }
+    .hero p { max-width:630px; margin:0; font-size:1.1rem; color:#e0edf7; }
+    .hero-actions { margin-top:28px; display:flex; gap:12px; flex-wrap:wrap; }
+    .btn { display:inline-block; padding:11px 20px; border-radius:10px; text-decoration:none; font-weight:700; }
+    .btn-primary { background:#b8f3de; color:#073f47; }
+    .btn-secondary { border:1px solid #90b6cb; color:white; }
+    main { padding:55px 0 65px; }
+    h2 { letter-spacing:-.035em; font-size:1.8rem; margin:0 0 8px; }
+    .section-intro { color:var(--muted); margin:0 0 23px; }
+    .grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:15px; margin-bottom:51px; }
+    .tile, details, .contact { border:1px solid var(--edge); background:white; border-radius:16px; box-shadow:0 6px 22px rgba(18,39,67,.035); }
+    .tile { padding:23px; }
+    .tile .symbol { font-size:1.5rem; }
+    .tile h3 { font-size:1.02rem; margin:12px 0 6px; }
+    .tile p { font-size:.92rem; color:var(--muted); margin:0; }
+    .faq { display:grid; gap:10px; margin-bottom:52px; }
+    details { padding:17px 20px; }
+    summary { font-weight:700; cursor:pointer; padding-right:10px; }
+    details p { margin:10px 0 0; color:var(--muted); }
+    .contact { padding:30px; background:linear-gradient(145deg,#fff,#f1fbfa); }
+    .contact p { color:var(--muted); max-width:690px; }
+    .email-notice { border-left:4px solid #d39825; background:#fff7e8; border-radius:6px; padding:12px 15px; margin:20px 0; color:#6c4b0c; font-size:.93rem; }
+    .email-line { font-weight:750; font-size:1.07rem; overflow-wrap:anywhere; }
+    .small { font-size:.9rem; color:var(--muted); }
+    footer { border-top:1px solid var(--edge); padding:25px 0; color:var(--muted); font-size:.9rem; }
+    footer .wrap { display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; }
+    @media (max-width:690px) { .grid {grid-template-columns:1fr;} nav .links { gap:12px; } .hero { padding:59px 0 66px; } .contact {padding:22px;} }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav aria-label="Main navigation">
+        <a class="brand" href="#top"><span class="mark" aria-hidden="true">↗</span> TradeGuide</a>
+        <div class="links"><a href="#faq">FAQs</a><a href="#contact">Contact</a></div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="wrap">
+      <div class="eyebrow">TradeGuide support center</div>
+      <h1>How can we help?</h1>
+      <p>Get help using TradeGuide, learn how stock evaluations work, and find answers to common questions.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#faq">Browse FAQs</a>
+        <a class="btn btn-secondary" href="#contact">Contact support</a>
+      </div>
+    </div>
+  </section>
+
+  <main class="wrap">
+    <section aria-labelledby="help-title">
+      <h2 id="help-title">Quick help</h2>
+      <p class="section-intro">The most common things you might need help with.</p>
+      <div class="grid">
+        <article class="tile"><div class="symbol" aria-hidden="true">⌕</div><h3>Stock searches</h3><p>Type a company name or stock symbol, then choose a matching suggestion before requesting an evaluation.</p></article>
+        <article class="tile"><div class="symbol" aria-hidden="true">↗</div><h3>AI evaluations</h3><p>TradeGuide offers educational stock analysis and projections, not guaranteed outcomes or personalized financial advice.</p></article>
+        <article class="tile"><div class="symbol" aria-hidden="true">⚙</div><h3>Account settings</h3><p>Review or update your username, risk preference, and analysis timeframe in Settings.</p></article>
+      </div>
+    </section>
+
+    <section id="faq" aria-labelledby="faq-title">
+      <h2 id="faq-title">Frequently asked questions</h2>
+      <p class="section-intro">Answers to common questions about TradeGuide.</p>
+      <div class="faq">
+        <details><summary>What is TradeGuide?</summary><p>TradeGuide is an educational app that uses AI to help users explore publicly traded stocks and review possible future price scenarios. It does not place trades or manage investment accounts.</p></details>
+        <details><summary>How do I evaluate a stock?</summary><p>Open the stock search screen, enter a name or ticker, select a suggestion, and submit your request. Your evaluation depends on the current availability of the app and its data services.</p></details>
+        <details><summary>Why can't I submit another evaluation?</summary><p>TradeGuide currently limits each account to 25 evaluations per day. If you've reached that limit, try again after the daily limit resets. You may also need to select a valid stock from the search suggestions.</p></details>
+        <details><summary>Where can I find previous evaluations?</summary><p>Recent evaluations appear on your Dashboard. TradeGuide currently shows evaluation history for up to seven days.</p></details>
+        <details><summary>Are the stock predictions guaranteed?</summary><p>No. AI-generated projections are speculative and can be inaccurate. They are for informational and educational purposes only and should not be treated as financial advice or a guarantee of future performance.</p></details>
+        <details><summary>What should I do if I can't log in?</summary><p>Check your email address and password, confirm your internet connection, and try reopening the app. If the issue continues, contact support using the information below. Never send your password.</p></details>
+        <details><summary>How can I request account deletion or ask about my data?</summary><p>Contact support using the email address below and state that you want to delete your account or have a privacy question. Support requests are separate from any account-deletion controls available within the app.</p></details>
+      </div>
+    </section>
+
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact support</h2>
+      <p>Having trouble with TradeGuide or want to report a bug? Email support with a short description of the issue, your device type, and what you were doing when the problem occurred.</p>
+      <div class="email-notice"><strong>Before publishing:</strong> Replace the placeholder below with an email address you actively monitor. Do not publish this page with the placeholder still present.</div>
+      <p class="email-line">ryanjiang578@gmail.com</p>
+      <p class="small">For security, do not send passwords, authentication tokens, or other sensitive account information.</p>
+    </section>
+  </main>
+
+  <footer><div class="wrap"><span>© 2026 Ryan Jiang. TradeGuide.</span><span>Educational information only. Not investment advice.</span></div></footer>
+</body>
+</html>
